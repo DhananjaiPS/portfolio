@@ -18,19 +18,19 @@ const schools = [
     image: "https://yayskool-school-images.s3.ap-south-1.amazonaws.com/kendriya-vidyalaya-no-2-srinagar-579317163.png", color: 'from-blue-300 to-blue-500', yOffset: 66
   },
   {
-    id: 3, name: 'Kendriya Vidyalaya Jalipa Cantt, Barmer, Rajasthan', period: 'Middle/High',
+    id: 3, name: 'Kendriya Vidyalaya Jalipa Cantt, Barmer, Rajasthan', period: '2nd-5th Class',
     details: 'Continued academic excellence and participated in extracurricular activities.', icon: School, image: 'https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/299598092_444610587681081_3665920072763940845_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=F7VgV2rm8hYQ7kNvwHysXLF&_nc_oc=AdplGNIjfgNK8ExflhBf1rPeJqaoSC8GL4ocJ7r53l-UVFq6JXZSCC5YQjKRhisCw7CgzKeyzlFJ50q7-69gMay4&_nc_zt=23&_nc_ht=scontent.fagr1-4.fna&_nc_gid=gJAjwTjXQyHZcD7OQmdcAA&_nc_ss=7a389&oh=00_AfxYDTzow93cNPMzZNvmXwOWkSWgBqXrUL7gFCoSvE_eDw&oe=69D1FA5A', color: 'from-lime-400 to-emerald-500', yOffset: -34
   },
   {
-    id: 4, name: 'Kendriya Vidyalaya (KV) STC BSF Humhama , J&K', period: 'High School',
+    id: 4, name: 'Kendriya Vidyalaya (KV) STC BSF Humhama , J&K', period: '5th-7th Class',
     details: 'Focused on core subjects and began exploring the magic of programming logic.', icon: School, image: 'https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/648474029_1726113688551467_1084202230752872086_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2a1932&_nc_ohc=IBkYCXIsZVMQ7kNvwGZqnuD&_nc_oc=AdrfevqKn1vigNvipqCLi6lpz7qOeSH1DZs3IRlpwXRKhhBm69t_Bcsyp8bz6MXcB-2cecvuAHUb-I18ck4KZR5D&_nc_zt=23&_nc_ht=scontent.fagr1-4.fna&_nc_gid=BZDVx-xnwGZpdHw75BIiWA&_nc_ss=7a389&oh=00_Afx9YnDG36dDeVLU9NWmuX2DxGKI3zw8B1RHqf5a3zhQ7g&oe=69D20418', color: 'from-emerald-400 to-teal-500', yOffset: 52
   },
   {
-    id: 5, name: 'Kendriya Vidyalaya Simultaia, Krishnanagar, Nadia, West Bengal', period: 'High School',
+    id: 5, name: 'Kendriya Vidyalaya Simultaia, Krishnanagar, Nadia, West Bengal', period: '7th-9th School',
     details: 'Transitioned towards advanced sciences, mathematics, and deeper analytical thinking.', icon: BookOpen, image: 'https://yayskool-school-images.s3.ap-south-1.amazonaws.com/kendriya-vidyalaya-nadia-835311690.png', color: 'from-teal-400 to-cyan-500', yOffset: -48
   },
   {
-    id: 6, name: 'Kendriya Vidyalaya No. 2 Kanchrapara,24 Parganas (North), West Bengal', period: 'Intermediate',
+    id: 6, name: 'Kendriya Vidyalaya No. 2 Kanchrapara,24 Parganas (North), West Bengal', period: '9th to 12th',
     details: 'Intermediate (12th PCM) - Secured an amazing 93%. The turning point for engineering.', icon: Star, image: 'https://lh3.googleusercontent.com/gps-cs-s/AHVAwepScTjOGUAoaXt3QKX9SBSxPe2LiL83pKTpe5fndIcJHg6ueCSOQGW2kV7YXE2GJfhWYUdQE3itH3Thtnwm0Mq4ppeqH8PS4vA2PrIeRWWxMXbWR8fr3qgrNFfAIDLMWfCzEm4=s1360-w1360-h1020-rw', color: 'from-cyan-400 to-sky-500', yOffset: 34
   },
   {
@@ -167,12 +167,12 @@ export default function EducationalMapAdventure() {
             <Navigation size={16} className="text-amber-900" />
             THE JOURNEY MAP
           </div>
-          <img src="https://i.pinimg.com/474x/bd/57/f2/bd57f2141a9d3e96ff01a03fa0a292ac.jpg" alt="" className='absolute top-8 mt-10 right-5 w-30 h-30 object-contain p-3 sm:hidden' />
+          <img src="https://i.pinimg.com/474x/bd/57/f2/bd57f2141a9d3e96ff01a03fa0a292ac.jpg" alt="" className='absolute top-8 mt-10 right-5 w-30 h-30 object-contain p-3 sm:hidden animate-floating transition-transform duration-700 ease-out rounded-full ' />
 
 
           <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500 text-6xl font-black tracking-tight mt-10">
             My Educational Expedition
-            <img src="https://i.pinimg.com/474x/bd/57/f2/bd57f2141a9d3e96ff01a03fa0a292ac.jpg" alt="" className='absolute  sm:top-0 right-0 w-40 h-40 object-contain p-3 hidden sm:block' />
+            <img src="https://i.pinimg.com/474x/bd/57/f2/bd57f2141a9d3e96ff01a03fa0a292ac.jpg" alt="" className='absolute  sm:top-0 right-0 w-40 h-40 object-contain p-3 hidden sm:block animate-floating transition-transform duration-700 ease-out rounded-full' />
           </h2>
 
           <p className="mx-auto mt-3 max-w-xl text-[13px] leading-6 text-slate-600 md:text-sm">

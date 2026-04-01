@@ -31,13 +31,22 @@ const itemVariants: Variants = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-background">
+      <div
+        className="absolute inset-0 bg-[url('https://i.pinimg.com/1200x/ac/24/dc/ac24dca5cc4bea79b6c7aee7c65ebb67.jpg')] 
+                bg-center bg-repeat opacity-15 pointer-events-none bg-contain"
+      ></div>
 
       {/* LEFT IMAGE – DO NOT TOUCH */}
       <img
         src="https://i.pinimg.com/736x/bc/ee/d6/bceed6e0a37d24288d4bd1ad697d4820.jpg"
         alt=""
-        className="relative -top-20   h-[100vh] w-[30%] sm:block hidden border-white  "
+        className="relative -top-20 h-full   w-[30%] sm:block hidden border-white  "
       />
+      {/* <img
+        src="https://i.pinimg.com/736x/b4/5f/63/b45f632f46f9d0ee4d13e683d3ea0fb0.jpg"
+        alt=""
+        className="relative -top-20   h-[100vh] w-[30%] sm:block hidden border-white  "
+      /> */}
 
 
       {/* DOODLE FLOATING SHAPES */}
@@ -108,6 +117,7 @@ export default function Hero() {
 
       {/* RIGHT SIDE CONTENT */}
       <div className="container mx-auto px-6 relative z-10 text-center max-w-3xl">
+        {/* <img src="" alt="" /> */}
 
         {/* TOP BADGE */}
         <motion.div

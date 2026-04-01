@@ -1,6 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
+// FIX 1: Imported 'Variants' from framer-motion
+import { motion, Variants } from 'framer-motion';
 import { Sparkles, Code2, Server, Database, Cpu, Star, Pin } from 'lucide-react';
 
 const skillsMatrix = [
@@ -58,12 +59,14 @@ const achievements = [
   { text: 'Led School football team in KVS Regional Sports Meet Kolkata, securing 1st position.', highlight: 'bg-orange-200' }
 ];
 
-const containerVars = {
+// FIX 2: Added ': Variants' to explicitly tell TypeScript what this object is
+const containerVars: Variants = {
   hidden: { opacity: 0 },
   show: { opacity: 1, transition: { staggerChildren: 0.15 } }
 };
 
-const itemVars = {
+// FIX 3: Added ': Variants' here too. This fixes the specific error you were seeing.
+const itemVars: Variants = {
   hidden: { opacity: 0, scale: 0.8, y: 30 },
   show: { opacity: 1, scale: 1, y: 0, transition: { type: 'spring', stiffness: 150, damping: 15 } }
 };
@@ -192,7 +195,7 @@ export default function Skills() {
                     ))}
                   </ul>
                 </div>
-              </motion.div> {/* FIX: Added missing closing tag here! */}
+              </motion.div>
             </div>
 
           </div>
@@ -203,9 +206,10 @@ export default function Skills() {
         <img src="/pic41.png" alt="" className='w-26 h-29  absolute -bottom-1 right-10 sm:bottom-6 sm:right-190 rotate-348 animate-floating transition-transform duration-700 ease-out sm:hidden md:block hidden' />
         <img src="/pic40.png" alt="" className='w-26 h-23  absolute -bottom-1 right-10 sm:bottom-60 sm:right-270 rotate-378 animate-floating transition-transform duration-700 ease-out md:block hidden' />
         <img src="/pic49.png" alt="" className='w-25 h-25 sm:w-30 sm:h-30  absolute bottom-25 right-10 rotate-348 animate-floating transition-transform duration-700 ease-out' />
+
         <div className="py-16 flex flex-col items-center justify-center text-center">
 
-          {/* Google Fonts Links (In Next.js, it's better to put this in layout.tsx, but this works here too) */}
+          {/* Google Fonts Links */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet" />
@@ -220,7 +224,6 @@ export default function Skills() {
             style={{
               fontFamily: '"Italianno", cursive',
               fontWeight: 400,
-              // Make it large like a real signature
               lineHeight: '1'
             }}
           >
