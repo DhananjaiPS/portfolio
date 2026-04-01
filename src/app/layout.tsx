@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,13 +15,33 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased selection:bg-sky-200 selection:text-sky-900 overflow-x-hidden`}>
+      <body
+        className={`${inter.variable} antialiased selection:bg-sky-200 selection:text-sky-900 overflow-x-hidden`}
+      >
+        {/* Your Website Content */}
         {children}
+
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FCNBYCGH5T"
+          strategy="afterInteractive"
+        />
+
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FCNBYCGH5T', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

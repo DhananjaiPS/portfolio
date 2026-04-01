@@ -38,13 +38,14 @@ export default function Navbar() {
                 <div className="
           flex items-center justify-between 
           w-full max-w-5xl 
-     
+      backdrop-blur-xs 
         
-       px-6 py-3 
+       px-6 py-2 
          mb-10
         ">
                     {/* Logo */}
                     <span className="text-xl font-extrabold bg-gradient-to-r from-blue-500 to-sky-400 bg-clip-text text-transparent">
+                        My Portfolio
 
                     </span>
 
