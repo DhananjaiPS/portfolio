@@ -37,16 +37,18 @@ export default function Hero() {
       ></div>
 
       {/* LEFT IMAGE – DO NOT TOUCH */}
-      <img
+      {/* <img
         src="https://i.pinimg.com/736x/bc/ee/d6/bceed6e0a37d24288d4bd1ad697d4820.jpg"
         alt=""
         className="relative -top-20 h-full   w-[30%] sm:block hidden border-white  "
-      />
+      /> */}
       {/* <img
         src="https://i.pinimg.com/736x/b4/5f/63/b45f632f46f9d0ee4d13e683d3ea0fb0.jpg"
         alt=""
         className="relative -top-20   h-[100vh] w-[30%] sm:block hidden border-white  "
       /> */}
+      <img src="/pic32.png" alt="" className="absolute top-50 p-4 left-35  h-45 w-40 sm:block hidden border-white  bg-contain animate-floating transition-transform duration-700 ease-out hover:scale-110" />
+      <img src="/pic31.png" alt="" className="absolute top-125 p-4 left-45  h-52 rotate-352 w-40 sm:block hidden border-white  bg-contain animate-floating transition-transform duration-700 ease-out hover:scale-110" />
 
 
       {/* DOODLE FLOATING SHAPES */}
@@ -130,7 +132,7 @@ export default function Hero() {
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-sky-100 to-white border border-sky-300 text-sky-700 text-sm font-bold mb-4 shadow-[0_0_15px_rgba(56,189,248,0.4)] cursor-grab active:cursor-grabbing"
         >
-          <img src="/pic3.png" alt="" className="w-30 h-30 absolute top-0 right-100" />
+          <img src="/pic3.png" alt="" className="w-25 h-25 absolute animate-floating transition-transform duration-700 ease-out  top-0 right-100 hover:scale-110" />
           <motion.div animate={{ rotate: 360 }} transition={{ duration: 4, repeat: Infinity, ease: "linear" }}>
             <Sparkles size={16} className="text-sky-500" />
           </motion.div>
@@ -231,9 +233,15 @@ export default function Hero() {
                 <Code size={24} />
               </Link>
             </motion.div>
+            <img src="/pic33.png" alt="" className="absolute top-0 right-0  p-4  h-45 w-40 sm:block hidden border-white  bg-contain animate-floating transition-transform duration-700 ease-out hover:scale-110" />
+            <img src="/pic42.png" alt="" className="absolute top-120 -right-10  p-4  h-45 w-40 sm:block hidden border-white  bg-contain animate-floating transition-transform duration-700 ease-out hover:scale-110" />
+
           </motion.div>
+
         </motion.div>
+
       </div>
+
     </section>
   );
 }
