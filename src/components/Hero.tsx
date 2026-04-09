@@ -136,7 +136,7 @@ export default function Hero() {
           <motion.div animate={{ rotate: 360 }} transition={{ duration: 4, repeat: Infinity, ease: "linear" }}>
             <Sparkles size={16} className="text-sky-500" />
           </motion.div>
-          Full Stack Intern & IoT Enthusiast
+          योगः कर्मसु कौशलम् — Excellence in Action
         </motion.div>
 
         {/* NAME BLOCK */}
@@ -168,8 +168,7 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 mt-5"
         >
-          I build scalable web apps, craft beautiful user experiences, and
-          engineer smart IoT solutions — blending hardware magic with modern software.
+         Driven by purpose, I build scalable full-stack systems, craft seamless user experiences, and deliver end-to-end solutions that create real-world impact—leveraging AI/ML and IoT where it adds true value.
         </motion.p>
 
         {/* BUTTONS */}
@@ -216,7 +215,7 @@ export default function Hero() {
             {/* Spinning Social Icons */}
             <motion.div whileHover={{ scale: 1.3, rotate: 180 }} whileTap={{ scale: 0.8 }} transition={{ type: "spring", stiffness: 200 }}>
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/dhananjaips/"
                 className="flex p-4 bg-white border-2 border-sky-100 mb-10 hover:border-blue-500 hover:bg-blue-50 text-slate-700 rounded-full transition-all shadow-lg hover:text-blue-600"
                 aria-label="LinkedIn"
               >

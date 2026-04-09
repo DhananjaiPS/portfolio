@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import { Toaster } from "react-hot-toast"; // ✅ correct place
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
+// ✅ Import the new component
+import VisitorCounterModal from "@/components/VisitorCounterModal"; 
 
 const inter = Inter({
   variable: "--font-inter",
@@ -24,6 +26,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased selection:bg-sky-200 selection:text-sky-900 overflow-x-hidden`}
       >
+        {/* 🔥 Visitor Counter Modal */}
+        <VisitorCounterModal />
+
         {/* Your Website Content */}
         {children}
 

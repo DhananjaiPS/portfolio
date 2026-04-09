@@ -21,14 +21,14 @@ export default function Home() {
         <Hero />
         <About />
       </section>
-
+  <section id="experience">
+        <Experience />
+      </section>
       <section id="education">
         <EducationPath />
       </section>
 
-      <section id="experience">
-        <Experience />
-      </section>
+    
 
       <section id="projects">
         <Projects />

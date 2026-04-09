@@ -53,10 +53,15 @@ const marqueeImages = [
 
 const achievements = [
   { text: 'Qualified GATE DA 2026 (AIR 6,358), GATE DA 2025 (AIR 7,747), and GATE CS 2026 (AIR 20,661).', highlight: 'bg-yellow-200' },
+  { text: 'Top 3 in Department CS - IoT ' },
   { text: 'Secured 2nd place out of 300+ at Hi-Tech TechXthone Hackathon.', highlight: 'bg-sky-200' },
+  { text: '3X Acadamic Scholarship based on Performance' },
+  
+  
   { text: 'Best Research Paper Award on ”Connected Retail With Smart Shelves and Inventory Management” at International IoT, Robotics and Automation 5.0 Conference (2025), among 290+ Research papers.', highlight: 'bg-pink-200' },
   { text: 'Solved 800+ DSA problems across LeetCode, GFG, HackerRank.', highlight: 'bg-emerald-200' },
-  { text: 'Led School football team in KVS Regional Sports Meet Kolkata, securing 1st position.', highlight: 'bg-orange-200' }
+  { text: 'Led School football team in KVS Regional Sports Meet Kolkata, securing 1st position.', highlight: 'bg-orange-200' },
+  
 ];
 
 // FIX 2: Added ': Variants' to explicitly tell TypeScript what this object is
