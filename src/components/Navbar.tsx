@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { CiPaperplane } from "react-icons/ci";
 
 const navLinks = [
     { name: "About", href: "#about" },
@@ -33,20 +32,17 @@ export default function Navbar() {
                 initial={{ y: -80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 mb-10 "
+                className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 mb-10"
             >
                 <div className="
-          flex items-center justify-between 
-          w-full max-w-5xl 
-      backdrop-blur-xs 
-        
-       px-6 py-2 
-         mb-10
-        ">
+                    flex items-center justify-between 
+                    w-full max-w-5xl  
+                    backdrop-blur-xs 
+                    px-6 py-2 
+                ">
                     {/* Logo */}
-                    <span className="text-xl font-extrabold bg-gradient-to-r from-blue-500 to-sky-400 bg-clip-text text-transparent">
+                    <span className="text-xl font-extrabold bg-gradient-to-r from-blue-500 to-sky-400 bg-clip-text text-transparent cursor-pointer">
                         My Portfolio
-
                     </span>
 
                     {/* Desktop Menu */}
@@ -55,9 +51,9 @@ export default function Navbar() {
                             <button
                                 key={link.name}
                                 onClick={() => handleScroll(link.href)}
-                                className="text-[15px] font-bold tracking-wide 
-                           text-blue-600/70 hover:text-blue-500 
-                           transition-colors duration-300"
+                                className="cursor-pointer text-[15px] font-bold tracking-wide 
+                                text-blue-600/70 hover:text-blue-500 
+                                transition-colors duration-300"
                             >
                                 {link.name}
                             </button>
@@ -67,10 +63,10 @@ export default function Navbar() {
                         <a
                             href="/resume.pdf"
                             target="_blank"
-                            className="px-4 py-2 text-sm font-bold text-white 
-                         rounded-full bg-gradient-to-r from-blue-600 to-sky-500 
-                         shadow-md hover:shadow-lg 
-                         transition-all duration-300"
+                            className="cursor-pointer px-4 py-2 text-sm font-bold text-white 
+                            rounded-full bg-gradient-to-r from-blue-600 to-sky-500 
+                            shadow-md hover:shadow-lg 
+                            transition-all duration-300"
                         >
                             Resume
                         </a>
@@ -79,8 +75,8 @@ export default function Navbar() {
                     {/* Mobile Hamburger */}
                     <button
                         onClick={() => setOpen(!open)}
-                        className="md:hidden p-2 rounded-full bg-white/50 backdrop-blur-xl 
-                       text-blue-700 shadow"
+                        className="cursor-pointer md:hidden p-2 rounded-full bg-white/50 backdrop-blur-xl 
+                        text-blue-700 shadow"
                     >
                         {open ? <X size={22} /> : <Menu size={22} />}
                     </button>
@@ -96,11 +92,11 @@ export default function Navbar() {
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
                         className="
-              md:hidden fixed top-20 left-4 right-4 
-              bg-white/70 backdrop-blur-xl 
-              rounded-2xl shadow-xl border border-white/40 
-              flex flex-col p-6 gap-4 z-40
-            "
+                            md:hidden fixed top-20 left-4 right-4 
+                            bg-white/70 backdrop-blur-xl 
+                            rounded-2xl shadow-xl border border-white/40 
+                            flex flex-col p-6 gap-4 z-40
+                        "
                     >
                         {navLinks.map((link) => (
                             <button
@@ -109,8 +105,8 @@ export default function Navbar() {
                                     setOpen(false);
                                     handleScroll(link.href);
                                 }}
-                                className="text-lg font-semibold text-blue-600 hover:text-blue-500 
-                           transition-colors"
+                                className="cursor-pointer text-lg font-semibold text-blue-600 hover:text-blue-500 
+                                transition-colors"
                             >
                                 {link.name}
                             </button>
@@ -120,9 +116,9 @@ export default function Navbar() {
                         <a
                             href="/resume.pdf"
                             target="_blank"
-                            className="mt-3 px-4 py-2 text-center text-sm font-bold text-white
-                         rounded-full bg-gradient-to-r from-blue-600 to-sky-500 
-                         shadow-md hover:shadow-lg transition-all"
+                            className="cursor-pointer mt-3 px-4 py-2 text-center text-sm font-bold text-white
+                            rounded-full bg-gradient-to-r from-blue-600 to-sky-500 
+                            shadow-md hover:shadow-lg transition-all"
                         >
                             Resume
                         </a>

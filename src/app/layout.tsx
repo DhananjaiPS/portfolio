@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Toaster } from "react-hot-toast"; // ✅ correct place
 import "./globals.css";
 
 const inter = Inter({
@@ -25,6 +26,9 @@ export default function RootLayout({
       >
         {/* Your Website Content */}
         {children}
+
+        {/* 🔥 Toast Notifications */}
+        <Toaster position="top-right" />
 
         {/* Google Analytics Script */}
         <Script
