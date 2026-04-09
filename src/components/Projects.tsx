@@ -9,14 +9,14 @@ import { MouseEvent, useState, useEffect } from 'react';
 const projects = [
   {
     title: 'Smart Dukan',
-    tech: 'Next.js, TypeScript, IoT Sensors, ML , MongoDB',
+    tech: 'Next.js, TypeScript, IoT Sensors, ML, MongoDB',
     description: [
       'Developed an end-to-end Smart Retail Ecosystem integrating IoT sensors.',
       'Engineered a lightweight CV inference pipeline achieving 81.4% accuracy.',
-      'Architected real-time sync using WebSockets for the Next.js dashboard.'
+      'Architected real-time sync using WebSockets for the Next.js dashboard with Admin Panel, Order and refund Management, Inventory Management,Recommendation Engine and User Management.'
     ],
     icon: Cpu,
-    link: 'https://www.youtube.com/watch?v=ExY-FNohTgM',
+    link: 'https://io-t-retail-qbas.vercel.app/',
     image: ['iot1.png', 'iot2.png', 'iot3.png'],
   },
   {
